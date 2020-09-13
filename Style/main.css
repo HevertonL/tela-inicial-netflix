@@ -1,0 +1,94 @@
+
+/*Elemento base*/
+
+:root {
+    --vermelho: #E50914;
+    --preta: #141414;
+    --title: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+body {
+    background: var(--preta);
+    font-family:'Times New Roman', Times, serif;
+    color: var(--title);
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    color: var(--vermelho);
+    font-family: 'Bebas Neue', Times;
+    font-size: 4rem;
+    margin-left: 0.7rem;
+
+}
+
+header nav a {
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 0.8rem;
+    font-size: 1.2rem;
+}
+
+header nav a:hover {
+    color: var(--title);
+}
+
+/* Filme principal */
+
+.filme-principal {
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/fundo-the-last.jpg');
+    background-size: cover;
+
+    height: 35rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.filme-principal .titulo{
+
+    margin-bottom: 2rem;
+    font-family: 'Bebas Neue', Times;
+    font-size: 2.5rem;
+    
+}
+
+.filme-principal .sinopse {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 2rem;
+    margin-right: 1.5rem;
+    width: 35rem;
+
+    font-size: 1.4rem;
+    text-align: justify;
+}
+
+.botao {
+
+    background-color: rgba(0,0,0,.50);
+    color: var(--title);
+    border: none;
+    padding: 0.7rem 1.4rem;
+    margin-right: 1rem;
+
+}
+
+
+
+
